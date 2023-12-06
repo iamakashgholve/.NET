@@ -1,0 +1,15 @@
+E:\.NET\Day1\ConsoleApp1\Assignment_1\bin\Debug\net7.0\Assignment_1.exe
+E:\.NET\Day1\ConsoleApp1\Assignment_1\bin\Debug\net7.0\Assignment_1.deps.json
+E:\.NET\Day1\ConsoleApp1\Assignment_1\bin\Debug\net7.0\Assignment_1.runtimeconfig.json
+E:\.NET\Day1\ConsoleApp1\Assignment_1\bin\Debug\net7.0\Assignment_1.dll
+E:\.NET\Day1\ConsoleApp1\Assignment_1\bin\Debug\net7.0\Assignment_1.pdb
+E:\.NET\Day1\ConsoleApp1\Assignment_1\obj\Debug\net7.0\Assignment_1.csproj.AssemblyReference.cache
+E:\.NET\Day1\ConsoleApp1\Assignment_1\obj\Debug\net7.0\Assignment_1.GeneratedMSBuildEditorConfig.editorconfig
+E:\.NET\Day1\ConsoleApp1\Assignment_1\obj\Debug\net7.0\Assignment_1.AssemblyInfoInputs.cache
+E:\.NET\Day1\ConsoleApp1\Assignment_1\obj\Debug\net7.0\Assignment_1.AssemblyInfo.cs
+E:\.NET\Day1\ConsoleApp1\Assignment_1\obj\Debug\net7.0\Assignment_1.csproj.CoreCompileInputs.cache
+E:\.NET\Day1\ConsoleApp1\Assignment_1\obj\Debug\net7.0\Assignment_1.dll
+E:\.NET\Day1\ConsoleApp1\Assignment_1\obj\Debug\net7.0\refint\Assignment_1.dll
+E:\.NET\Day1\ConsoleApp1\Assignment_1\obj\Debug\net7.0\Assignment_1.pdb
+E:\.NET\Day1\ConsoleApp1\Assignment_1\obj\Debug\net7.0\Assignment_1.genruntimeconfig.cache
+E:\.NET\Day1\ConsoleApp1\Assignment_1\obj\Debug\net7.0\ref\Assignment_1.dll
