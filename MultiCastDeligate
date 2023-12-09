@@ -1,0 +1,52 @@
+//MultiCastDeligate
+//nareshIT
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MultiCastDelegate2 { 
+
+    public delegate void RectDelegate(double Width, double Height);
+    class Rectangle
+    {
+
+        public void GetArea(double width, double height)
+        {
+            //Console.WriteLine(width * height);
+            Console.WriteLine("Area of rect: " + width * height);
+        }
+        public void GetPerimeter(double Width, double Height)
+        {
+            Console.WriteLine("Perimeter of rect: " + 2 *(Width + Height));
+        }
+        static void Main()
+        {
+
+            /* //init class
+             Rectangle r = new Rectangle();
+             //mtd call
+             r.GetArea(12.34, 56.78);
+             r.GetPerimeter(12.34, 56.78);
+             Console.ReadLine();*/
+
+            // two seperate methods made 
+            /*Rectangle rect = new Rectangle();
+            RectDelegate obj = new RectDelegate(rect.GetArea);
+            RectDelegate obj2 = new RectDelegate(rect.GetPerimeter);
+            obj.Invoke(12.34, 56.78);
+            obj2.Invoke(12.34, 56.78);
+            Console.ReadLine();*/
+
+            //method binding
+            Rectangle rect = new Rectangle();
+            RectDelegate obj3 = rect.GetArea;
+            obj3 += rect.GetPerimeter;
+            obj3.Invoke(12.34, 56.78);
+            Console.WriteLine();
+            obj3.Invoke(47.87, 34.89);
+            Console.ReadLine();
+        }
+    }
+}
