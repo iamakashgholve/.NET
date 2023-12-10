@@ -1,0 +1,63 @@
+using System.Security.Cryptography.X509Certificates;
+
+namespace ConsoleApp1
+{
+    public class Program
+    {
+        public delegate string GreetingsDelegate(string name);
+        class AnonymousMethods 
+        { 
+
+            //delete this method and used anonymous method
+           /* public static string Greetings(string name)
+            {
+                return "Hello " + name + " have a very good morning!";
+            }*/
+            static void Main1()
+            {
+                /*GreetingsDelegate obj = new GreetingsDelegate(Greetings);*/
+                GreetingsDelegate obj = delegate (string name)
+                {
+                    return "Hello " + name + " have a very good morning!";
+                };
+                string str = obj.Invoke("Scott");
+                Console.WriteLine(str);
+                Console.ReadLine();
+            }
+        }
+
+       
+    }
+}
+
+namespace ConsoleApp2
+{
+    public class Program
+    {
+        //define delegate
+        public delegate int AddDelegate(int a, int b);
+        class AnonymousMethods
+        {
+            //there should be method to be delegated
+            //later its deleted
+            public int Add(int a, int b) 
+            {
+            return a + b;
+            }
+            
+            static void Main()
+            {
+                //instance of a delegate
+                AddDelegate obj = delegate (int a, int b)
+                {
+                    return a + b;
+                };
+                int addition = obj.Invoke(10, 20);
+                Console.WriteLine(addition);
+                Console.ReadLine();
+            }
+        }
+
+
+    }
+}
