@@ -1,0 +1,43 @@
+namespace ConsoleApp1
+{
+    //func
+    public delegate double AddNumsDelegate(int x, float y, double z);
+    //action
+    public delegate void AddNums2Delegate(int x, float y, double z);
+    //predicate
+    public delegate bool CheckLengthDelegate(string str);
+    internal class Program
+    {
+
+        public static double AddNums(int x, float y, double z)
+        {
+            return x + y + z;
+        }
+        public static void AddNums2(int x, float y, double z)
+        {
+            Console.WriteLine(x + y + z);
+        }
+        public static bool CheckLength(string str)
+        {
+            if (str.Length > 5)
+                return true;
+            return false;
+        }
+        static void Main()
+            {
+                AddNumsDelegate obj1 = AddNums;
+                double result = obj1.Invoke(100, 34.5f, 193.465);
+                Console.WriteLine(result);
+
+                AddNums2Delegate obj2 = AddNums2;
+                /*double result2 = obj2.Invoke();*/
+                obj2.Invoke(100, 34.5f, 193.465);
+
+                CheckLengthDelegate obj3 = CheckLength;
+                bool status = obj3.Invoke("Akshat");
+                Console.WriteLine(status);    
+                     
+            }
+
+        }
+    }
