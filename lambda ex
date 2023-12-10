@@ -1,0 +1,35 @@
+//lambda ex practice
+using System.Text.RegularExpressions;
+
+namespace ConsoleApp1
+{
+    public delegate string GreetingsDelegate(string name);
+     class Program
+    {
+            public static string Greetings(string name)
+            {
+                return "Hello " + name + " have a very good morning!"; 
+            }
+        static void Main()
+        {
+            //instantiation and fuunction/ethod call
+            //GreetingsDelegate obj = new GreetingsDelegate(Greetings);
+
+            //annymous method
+            /*GreetingsDelegate obj = delegate (string name)
+            {
+                return "Hello " + name + " have a very good morning!";
+            };*/
+
+            //lambda
+            GreetingsDelegate obj = name =>
+            {
+                return "Hello " + name + " have a very good morning!";
+            };
+            string str = obj.Invoke("Aakash");
+            Console.WriteLine(str); 
+
+            //do same for add display , time, and other methods(conv. to lambda)
+        }
+    }
+}
